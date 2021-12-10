@@ -1,0 +1,32 @@
+@base = http://localhost:3001/rates
+
+### Get All Rates
+GET {{base}}
+
+
+### Get Single Rates
+GET {{base}}/61b2a7489e46affc373b04ad
+
+
+### Create Rate
+POST {{base}}
+Content-Type: application/json
+
+{
+  "productId": 1,
+  "userId": 1,
+  "value": 0
+}
+
+
+### Update Rate
+PUT {{base}}/61b2a7489e46affc373b04ad
+Content-Type: application/json
+
+{
+  "productId": 18
+}
+
+
+### Remove Rate
+DELETE {{base}}/61b2a7489e46affc373b04ad
